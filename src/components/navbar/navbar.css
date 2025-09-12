@@ -1,0 +1,42 @@
+/* Importa a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Aplica a fonte a todos os links e à marca da Navbar */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;  /* Pode usar 400, 500, 700 */
+  font-size: 1.2rem; /* Fonte grande */
+}
+
+/* Navbar fixa e opaca */
+.navbar {
+  position: fixed; /* fixa no topo */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(92, 46, 34, 1);  /* semi-transparente inicialmente */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar transparente ao rolar */
+.navbar-scrolled {
+  background-color:rgba(92, 46, 34, 0.8);/* opaca */
+   
+}
+
+.nav-logo {
+  height: 60px; /* tamanho da logo */
+}
+
+.nav-links .nav-link {
+  margin: 0 15px; /* espaço entre os links */
+  color: white; /* cor do link */
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-links .nav-link:hover {
+  color: #ffcc00; /* efeito hover */
+}
+
