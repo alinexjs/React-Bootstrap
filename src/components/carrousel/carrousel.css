@@ -3,3 +3,7 @@
   object-fit: cover;
   height: 500px;
 }
+
+.carousel-container {
+  margin-top: 70px; /* ajuste esse valor pra altura real da sua Navbar */
+}

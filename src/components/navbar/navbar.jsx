@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -54,4 +53,3 @@ const NavbarComponent = () => {
 }
 
 export default NavbarComponent;
-

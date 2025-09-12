@@ -8,8 +8,8 @@ const App = () => {
   return(
     <>
     <NavbarComponent />
-    <CarouselComponent />
-    <CarouselComponent />
+    <CarouselComponent/>
+   
     </>
  
   )
