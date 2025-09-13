@@ -15,13 +15,13 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(92, 46, 34, 1);  /* semi-transparente inicialmente */
+  background-color: rgba(92, 46, 34, 1);  /* opaca  */
   transition: background-color 0.3s ease;
 }
 
 /* Navbar transparente ao rolar */
 .navbar-scrolled {
-  background-color:rgba(92, 46, 34, 0.8);/* opaca */
+  background-color:rgba(92, 46, 34, 0.8);/* semi-transparente */
    
 }
 
