@@ -1,0 +1,30 @@
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden; /* esconde o que passa para fora */
+  padding: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  animation: scroll 40s linear infinite; /* 40s = velocidade*/
+}
+
+.card-item {
+  flex: 0 0 auto;
+  margin-right: 20px; /* espaçamento entre imagens */
+}
+
+.card-item img {
+  display: block;
+  width: auto;      /* largura natural da imagem */
+  height: 400px;    /* altura fixa */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* animação infinita de esteira */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* anda metade (pois duplicou o array) */
+}

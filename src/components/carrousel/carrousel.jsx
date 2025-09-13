@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import "../carrousel/carrousel.css";
-import bn3 from "../../assets/3.png";
-import bn2 from "../../assets/2.png";
-import bn1 from "../../assets/1.png";
+import bn3 from "../../assets/bn3.png";
+import bn2 from "../../assets/bn2.png";
+import bn1 from "../../assets/bn1.png";
 
 const CarouselComponent = () => {
   return (

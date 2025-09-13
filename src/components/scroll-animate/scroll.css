@@ -1,0 +1,5 @@
+.animate-img{
+    width: 70%;   
+    height: auto; /* mantém proporção */
+    margin: 0 auto; /* centraliza horizontalmente */
+}

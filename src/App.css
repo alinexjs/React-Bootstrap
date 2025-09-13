@@ -5,3 +5,20 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500; /* opcional: 300, 400, 500, 700 */
 }
+
+
+.botao-suricate {
+  background-color: rgba(92, 46, 34, 1);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: all 0.3s ease; /* animação suave */
+}
+
+.botao-suricate:hover {
+  background-color: rgba(92, 46, 34, 0.8); /* cor quando passa o mouse */
+  transform: scale(1.05); /* aumenta levemente */
+}
