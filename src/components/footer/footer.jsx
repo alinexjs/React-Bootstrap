@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./footer.css"; 
+import "./footer.css";
 import imgFooter from "../../assets/footer-img.png";
 
 const Footer = () => {
@@ -11,18 +11,6 @@ const Footer = () => {
       </div>
 
       <Container>
-        {/* Links do Navbar */}
-        <Row>
-          <Col className="text-center">
-            <ul className="list-inline footer-links">
-              <li className="list-inline-item"><a href="#">HOME</a></li>
-              <li className="list-inline-item"><a href="#">CONHEÇA</a></li>
-              <li className="list-inline-item"><a href="#">CARDÁPIO</a></li>
-              <li className="list-inline-item"><a href="#">CONTATO</a></li>
-              </ul>
-          </Col>
-        </Row>
-
         {/* Copyright */}
         <Row className="mt-3">
           <Col className="text-center">
