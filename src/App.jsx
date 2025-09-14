@@ -10,7 +10,7 @@ import "aos/dist/aos.css"; // estilos do AOS
 // Importa as páginas
 import Home from "./pages/Home";
 import Cardapio from "./pages/Cardapio"; // imagens home abre cardapio
-import Conheca from "./pages/Conheca"; // boatao abre page conheca
+{/*import Conheca from "./pages/Conheca"; // boatao abre page conheca*/}
 
 function App() {
   useEffect(() => {
@@ -26,10 +26,11 @@ function App() {
         {/* Rota do Cardápio */}
         <Route path="/cardapio" element={<Cardapio />} />
         {/*Rota do Conheca*/}
-        <Route path="/conheca" element={<Conheca />} />{/* Página do botão */}
+       {/*} <Route path="/conheca" element={<Conheca />} />{/* Página do botão */}
       </Routes>
       <Footer />
     </Router>
+    
   );
 }
 

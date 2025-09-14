@@ -9,7 +9,7 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate(); // função de navegação
+  //const navigate = useNavigate(); // função de navegação
 
   return (
     <div>
@@ -31,9 +31,9 @@ const Home = () => {
                 doces e bebidas são preparados diariamente, sempre fresquinhos, para você sentir o verdadeiro prazer de
                 cada mordida. Aqui, cada xícara conta uma história de dedicação, qualidade e paixão pelo que fazemos. Venha viver essa experiência!
               </p>
-              <Button className="botao-suricate" onClick={() => navigate("/conheca")}>
+              <button className="botao-suricate" > {/*onClick={() => navigate("/conheca")}*/}
                 Saiba Mais
-              </Button>
+              </button>
             </Col>
           </Row>
         </Container>
