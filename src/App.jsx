@@ -9,14 +9,11 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // estilos do AOS
 // Importa as páginas
 import Home from "./pages/Home";
-// import Cardapio from "./pages/cardapio/Cardapio"; // imagens home abre cardapio
-// import Conheca from "./pages/Conheca"; // botão abre page conheca
-// import Contato from "./pages/Contato"; // botão abre page Contato
+import Cardapio from "./pages/cardapio/Cardapio"; // imagens home abre cardapio
+import Conheca from "./pages/Conheca"; // botão abre page conheca
+import Contato from "./pages/Contato"; // botão abre page Contato
 
 function App() {
-  useEffect(() => {
-    AOS.init(); // inicia a lib de animação
-  }, []);
 
   return (
     <Router>
@@ -25,11 +22,11 @@ function App() {
         {/* Rota inicial → abre Home automaticamente */}
         <Route path="/" element={<Home />} />
         {/* Rota do Cardápio */}
-        {/* <Route path="/cardapio" element={<Cardapio />} /> */}
+        <Route path="/cardapio" element={<Cardapio />} />
         {/* Rota do Conheça */}
-        {/* <Route path="/conheca" element={<Conheca />} /> */}
+        <Route path="/conheca" element={<Conheca />} />
         {/* Rota do Contato */}
-        {/* <Route path="/contato" element={<Contato />} /> */}
+        <Route path="/contato" element={<Contato />} />
       </Routes>
       <Footer />
     </Router>

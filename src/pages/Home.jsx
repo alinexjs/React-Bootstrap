@@ -6,10 +6,10 @@ import CardsRow from "../components/card/card";
 import xicara from "../assets/xirc.png";
 import Button from "react-bootstrap/Button";
 import "../App.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // função de navegação
 
 const Home = () => {
-  //const navigate = useNavigate(); // função de navegação
+  const navigate = useNavigate(); // usado para redirecionar páginas (desativado enquanto rotas estão comentadas)
 
   return (
     <div>
@@ -23,15 +23,31 @@ const Home = () => {
             </Col>
 
             <Col md={6}>
-              <h2 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702", fontWeight: "500" }}>
+              <h2
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  color: "#f98702",
+                  fontWeight: "500",
+                }}
+              >
                 Conheça a Suricate
               </h2>
-              <p style={{ fontFamily: "'Poppins', sans-serif", color: "#333" }}>
-                Sabor e cuidado em cada detalhe. Na Suricate, cada café é feito com carinho e atenção! Nossos pães,
-                doces e bebidas são preparados diariamente, sempre fresquinhos, para você sentir o verdadeiro prazer de
-                cada mordida. Aqui, cada xícara conta uma história de dedicação, qualidade e paixão pelo que fazemos. Venha viver essa experiência!
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  color: "#333",
+                }}
+              >
+                Sabor e cuidado em cada detalhe. Na Suricate, cada café é feito
+                com carinho e atenção! Nossos pães, doces e bebidas são
+                preparados diariamente, sempre fresquinhos, para você sentir o
+                verdadeiro prazer de cada mordida. Aqui, cada xícara conta uma
+                história de dedicação, qualidade e paixão pelo que fazemos.
+                Venha viver essa experiência!
               </p>
-              <button className="botao-suricate" > {/*onClick={() => navigate("/conheca")}*/}
+              <button
+                className="botao-suricate" onClick={() => navigate("/conheca")} // desativado porque rota está comentada
+              >
                 Saiba Mais
               </button>
             </Col>
