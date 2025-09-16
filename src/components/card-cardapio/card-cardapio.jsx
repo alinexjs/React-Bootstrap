@@ -1,6 +1,6 @@
 import { Card, Button } from "react-bootstrap";
-import card2Img from "../../assets/2.png";
-import card1Img from "../../assets/1.png";
+import card2Img from "../../assets/cafes.png";
+import card1Img from "../../assets/doce.png";
 import "./card-cardapio.css";
 
 function CardCardapio() {
@@ -8,7 +8,7 @@ function CardCardapio() {
    <div className="card-cardapio-container">
       {/* Card Bebidas */}
       <Card className="custom-card-cardapio">
-        <Card.Img src={card1Img} />
+        <Card.Img src={card2Img} />
         <div className="overlay-text">BEBIDAS</div>
       </Card>
 
@@ -21,8 +21,8 @@ function CardCardapio() {
       {/* Card Marrom */}
       <Card className="custom-card-cardapio card-marrom">
         <Card.Body>
-          <h3>E MUITO MAIS...</h3>
-          <button className="botao-suricate">VEJA NOSSO CARDÁPIO</button>
+          <div className="overlay-text"> E MUITO MAIS...</div>
+          <button className="botao-suricate">Ver Cardápio</button>
         </Card.Body>
       </Card>
     </div>
