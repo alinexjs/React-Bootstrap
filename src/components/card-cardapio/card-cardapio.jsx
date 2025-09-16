@@ -26,12 +26,8 @@ function CardCardapio() {
       <Card className="custom-card-cardapio card-marrom">
         <Card.Body>
           <div className="overlay-text"> E MUITO MAIS...</div>
-<<<<<<< HEAD
           
          <div className="overlay-button"> <button onClick={() => navigate("/cardapio")} className="botao-suricate">Ver Cardápio</button></div>
-=======
-         <div className="overlay-button"> <button className="botao-suricate">Ver Cardápio</button></div>
->>>>>>> 6616f62adb54bd672e9d56a75b012acdf5e461e3
         </Card.Body>
       </Card>
     </div>
