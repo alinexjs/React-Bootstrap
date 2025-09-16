@@ -1,0 +1,66 @@
+.conheca-container {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+   font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: bisque;
+}
+
+.conheca-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.conheca-hero h1 {
+    font-size: 1.2em;
+    color: #ff7f00;
+    margin-bottom: 10px;
+}
+
+.conheca hero p {
+    font-size: 2.8em;
+    color: #555;
+}
+
+.conheca-historia,
+.conheca-valores,
+.conheca-ambiente {
+    color: #ff7f00;
+    margin-bottom: 50px;
+}
+
+.conheca-container h2,
+.conheca-historia h2,
+.conheca-valores h2, 
+.conheca-ambiente h2 {
+    font-size: 2em;
+    color: #ff7f00;
+    margin-bottom: 15px;
+}
+
+.conheca-historia p,
+.conheca-ambiente p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+}
+
+conheca-valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.conheca-valores li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-left: 1.2em;
+    color: #333;
+}
+
+.conheca-imagem {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
