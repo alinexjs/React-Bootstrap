@@ -79,7 +79,25 @@ const Home = () => {
 
       {/* Animações e cards */}
       <Animate />
+<<<<<<< HEAD
       <CardCardapio />
+=======
+      <CardCardapio/>
+      <br></br>
+
+      <Container>
+
+         <h2 className="team-title">
+              <img
+                src={brown}
+                alt="Logo-Suricate"
+                className="team-title-logo"
+              />
+              Acesse Nosso Cardápio
+            </h2>
+        </Container>
+
+>>>>>>> 6616f62adb54bd672e9d56a75b012acdf5e461e3
       <CardsRow />
 
       {/* Seção Desenvolvedores */}

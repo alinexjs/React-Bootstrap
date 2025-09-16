@@ -13,6 +13,8 @@ import Cardapio from "./pages/Cardapio"; // imagens home abre cardapio
 import Conheca from "./pages/Conheca"; // botão abre page conheca
 import Contato from "./pages/Contato"; // botão abre page Contato
 
+
+
 function App() {
 
   return (
