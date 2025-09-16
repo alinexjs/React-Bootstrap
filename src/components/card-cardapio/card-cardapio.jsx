@@ -2,8 +2,11 @@ import { Card, Button } from "react-bootstrap";
 import card2Img from "../../assets/cafes.png";
 import card1Img from "../../assets/doce.png";
 import "./card-cardapio.css";
+import { useNavigate } from "react-router-dom";
+
 
 function CardCardapio() {
+  const navigate = useNavigate();
     return(
    <div className="card-cardapio-container">
       {/* Card Bebidas */}
@@ -23,7 +26,7 @@ function CardCardapio() {
         <Card.Body>
           <div className="overlay-text"> E MUITO MAIS...</div>
           
-         <div className="overlay-button"> <button className="botao-suricate">Ver Cardápio</button></div>
+         <div className="overlay-button"> <button onClick={() => navigate("/cardapio")} className="botao-suricate">Ver Cardápio</button></div>
         </Card.Body>
       </Card>
     </div>

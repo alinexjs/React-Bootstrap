@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import NavbarComponent from "../../components/navbar/navbar.jsx";
+import NavbarComponent from "../components/navbar/navbar.jsx";
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/Button";
 

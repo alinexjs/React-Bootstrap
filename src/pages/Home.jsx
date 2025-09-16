@@ -27,7 +27,7 @@ const Home = () => {
 
       <section className="corpo1">
         <Container >
-          
+
           <Row className="align-items-center corpo1-row">
             <Col xs={12} md={4} className="text-center text-md-start">
               <img
@@ -36,41 +36,50 @@ const Home = () => {
                 className="img-fluid xicara-img"
               />
             </Col>
-            
+
             <Col xs={12} md={8}>
-              <h2 className="home-title">
-                <img
-                  src={logo}
-                  alt="Logo-Suricate"
-                  className="home-title-logo"
-                />
-                Conheça a Suricate
-              </h2>
-
-              <p className="home-text">
-                Sabor e cuidado em cada detalhe. Na Suricate, cada café é feito
-                com carinho e atenção! Nossos pães, doces e bebidas são
-                preparados diariamente, sempre fresquinhos, para você sentir o
-                verdadeiro prazer de cada mordida. Aqui, cada xícara conta uma
-                história de dedicação, qualidade e paixão pelo que fazemos.
-                Venha viver essa experiência!
-              </p>
-
-              <button
-                className="botao-suricate"
-                onClick={() => navigate("/conheca")}
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column", // empilha em coluna
+                  alignItems: "center",    // centraliza horizontalmente
+                  justifyContent: "center", // centraliza verticalmente (se tiver altura definida)
+                }}
               >
-                Saiba Mais
-              </button>
+                <h2 className="home-title">
+                  <img
+                    src={logo}
+                    alt="Logo-Suricate"
+                    className="home-title-logo"
+                  />
+                  Conheça a Suricate
+                </h2>
+
+                <p className="home-text">
+                  Sabor e cuidado em cada detalhe. Na Suricate, cada café é feito
+                  com carinho e atenção! Nossos pães, doces e bebidas são
+                  preparados diariamente, sempre fresquinhos, para você sentir o
+                  verdadeiro prazer de cada mordida. Aqui, cada xícara conta uma
+                  história de dedicação, qualidade e paixão pelo que fazemos.
+                  Venha viver essa experiência!
+                </p>
+
+                <button
+                  className="botao-suricate"
+                  onClick={() => navigate("/conheca")}
+                >
+                  Saiba Mais
+                </button>
+              </div>
             </Col>
           </Row>
-        
+
         </Container>
       </section>
 
       {/* Animações e cards */}
       <Animate />
-      <CardCardapio/>
+      <CardCardapio />
       <CardsRow />
 
       {/* Seção Desenvolvedores */}

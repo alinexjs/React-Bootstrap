@@ -9,7 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // estilos do AOS
 // Importa as páginas
 import Home from "./pages/Home";
-import Cardapio from "./pages/cardapio/Cardapio"; // imagens home abre cardapio
+import Cardapio from "./pages/Cardapio"; // imagens home abre cardapio
 import Conheca from "./pages/Conheca"; // botão abre page conheca
 import Contato from "./pages/Contato"; // botão abre page Contato
 
