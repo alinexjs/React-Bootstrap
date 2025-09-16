@@ -71,20 +71,20 @@ function Cardapio() {
             <h1 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702" }}>Cafés</h1>
             <CardsLinha
               titulo="Café Tradicional"
-              texto=""
-              imagem="/src/assets/.png"
+              texto="O café de todo dia, preparado de forma simples e artesanal, com aroma intenso e sabor marcante que aquece o coração."
+              imagem="/src/assets/cf-tradicional.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
               titulo="Capuccino"
-              texto=""
-              imagem=""
+              texto="Cremoso e equilibrado, feito com café espresso, leite vaporizado e espuma aveludada, finalizado com um leve toque de canela."
+              imagem="/src/assets/capuccino.png"
               icon="/src/assets/carrinho-icon.png"
-            />
+            />  
             <CardsLinha
               titulo="Café Gelado"
-              texto=""
-              imagem=""
+              texto="Refrescante e suave, servido com gelo e um toque leve de doçura, ideal para dias quentes sem abrir mão do sabor do café."
+              imagem="/src/assets/cf-gelado.png"
               icon="/src/assets/carrinho-icon.png"
             />
           </Row>
@@ -92,21 +92,21 @@ function Cardapio() {
           <Row className="g-3 mt-4">
             <h1 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702" }}>Chás</h1>
             <CardsLinha
-              titulo="Chá"
-              texto=""
-              imagem=""
+              titulo="Chá de Camomila"
+              texto="Leve, delicado e calmante, ideal para momentos de relaxamento e tranquilidade."
+              imagem="/src/assets/cha-camomila.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Chá Gelado"
-              texto=""
-              imagem=""
+              titulo="Chá Gelado de Pêssego"
+              texto="Refrescante e adocicado na medida certa, feito com chá preto e suco natural de pêssego."
+              imagem="/src/assets/cha-gelado.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Cha Gelado.."
-              texto=""
-              imagem=""
+              titulo="Chá Verde com Hortelã"
+              texto="Refrescante e revitalizante, une a energia do chá verde com a leveza e frescor da hortelã."
+              imagem="/src/assets/cha-hortela.png"
               icon="/src/assets/carrinho-icon.png"
             />
           </Row>
@@ -114,21 +114,21 @@ function Cardapio() {
           <Row className="g-3 mt-4">
             <h1 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702" }}>Pães</h1>
             <CardsLinha
-              titulo="Pão"
-              texto=""
-              imagem=""
+              titulo="Pão de Queijo"
+              texto="Crocante por fora, macio e elástico por dentro, feito com polvilho e queijo de verdade, irresistível a qualquer hora do dia."
+              imagem="/src/assets/pao de queijo.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Pão"
-              texto=""
-              imagem=""
+              titulo="Pão Integral"
+              texto="Rico em fibras e feito com grãos selecionados (linhaça, chia e gergelim), é saboroso, leve e uma opção nutritiva."
+              imagem="/src/assets/pao integral.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Pão"
-              texto=""
-              imagem=""
+              titulo="Croissant Manteigado"
+              texto="Massa folhada dourada e delicada, com camadas amanteigadas que derretem na boca."
+              imagem="/src/assets/croissant.png"
               icon="/src/assets/carrinho-icon.png"
             />
           </Row>
@@ -136,21 +136,21 @@ function Cardapio() {
           <Row className="g-3 mt-4">
             <h1 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702" }}>Bolos</h1>
             <CardsLinha
-              titulo="Bolo"
-              texto=""
-              imagem=""
+              titulo="Bolo de Laranja"
+              texto="Leve e perfumado, feito com suco natural, trazendo um sabor cítrico suave que combina perfeitamente com o café."
+              imagem="/src/assets/bolo-laranja.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Bolo"
-              texto=""
-              imagem=""
+              titulo="Bolo de Chocolate"
+              texto="Clássico irresistível, macio e úmido, coberto com ganache cremosa de chocolate meio amargo."
+              imagem="/src/assets/bolo-chocolate.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Bolo"
-              texto=""
-              imagem=""
+              titulo="Bolo Red Velvet"
+              texto="Sofisticado e aveludado, de coloração vibrante e recheio suave de cream cheese levemente adocicado."
+              imagem="/src/assets/bolo-red-velvet.png"
               icon="/src/assets/carrinho-icon.png"
             />
           </Row>
@@ -158,21 +158,21 @@ function Cardapio() {
           <Row className="g-3 mt-4">
             <h1 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702" }}>Doces</h1>
             <CardsLinha
-              titulo="Doce"
-              texto=""
-              imagem=""
+              titulo="Brigadeiro Gourmet"
+              texto="Cremoso e macio, feito com chocolate belga e finalizado com granulados de chocolate meio amargo."
+              imagem="/src/assets/brigadeiro-gourmet.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="DOce"
-              texto=""
-              imagem=""
+              titulo="Torta de Limão"
+              texto="Equilíbrio perfeito entre o azedinho do limão e a doçura do creme, com base crocante e cobertura de merengue dourado."
+              imagem="/src/assets/torta-limao.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Doce"
-              texto=""
-              imagem=""
+              titulo="Sorvete de Chocolate"
+              texto="Intenso e envolvente, preparado com cacau de qualidade, perfeito para os amantes do chocolate."
+              imagem="/src/assets/sorvete.png"
               icon="/src/assets/carrinho-icon.png"
             />
           </Row>
