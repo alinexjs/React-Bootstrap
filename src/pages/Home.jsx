@@ -1,16 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+//import de components
+import CardCardapio from "../components/card-cardapio/card-cardapio";
 import CarouselComponent from "../components/carrousel/carrousel";
 import Animate from "../components/scroll-animate/scroll";
 import CardsRow from "../components/card/card";
+//import de imgs
 import xicara from "../assets/xirc.png";
 import logo from "../assets/logo-atual.png";
 import brown from "../assets/logo-marrom.png";
+//CSS
 import "../App.css";
-import { useNavigate } from "react-router-dom";
-
-import CardCardapio from "../components/card-cardapio/card-cardapio";
-
 // imagens dos devs
 import Aline from "../assets/Aliine.jpg";
 import Fernanda from "../assets/Fernanda.jpg";
@@ -41,9 +42,9 @@ const Home = () => {
               <div
                 style={{
                   display: "flex",
-                  flexDirection: "column", // empilha em coluna
-                  alignItems: "center",    // centraliza horizontalmente
-                  justifyContent: "center", // centraliza verticalmente (se tiver altura definida)
+                  flexDirection: "column", 
+                  alignItems: "center",    
+                  justifyContent: "center", 
                 }}
               >
                 <h2 className="home-title">
@@ -66,7 +67,7 @@ const Home = () => {
 
                 <button
                   className="botao-suricate"
-                  onClick={() => navigate("/conheca")}
+                  onClick={() => navigate("/conheca")} //cria navegação de rota ao clicar no botao
                 >
                   Saiba Mais
                 </button>
@@ -77,10 +78,22 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Animações e cards */}
-      <Animate />
-      <CardCardapio />
-      <CardsRow />
+     
+      <Animate /> {/* animação*/}
+
+      <CardCardapio /> {/* card-cardapio*/}
+      <br />
+      <Container>
+        <h2 className="team-title">
+          <img
+            src={brown}
+            alt="Logo-Suricate"
+            className="team-title-logo"
+          />
+          Acesse Nosso Cardápio
+        </h2>
+      </Container>
+      <CardsRow /> {/* cads infinitos*/}
 
       {/* Seção Desenvolvedores */}
       <section className="team-section my-5">
@@ -98,7 +111,7 @@ const Home = () => {
             <Row className="text-center justify-content-center g-4">
               <Col xs={6} sm={4} md={2}>
                 <a
-                  href="https://github.com/alinejsx"
+                  href="https://github.com/alinexjs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -113,7 +126,7 @@ const Home = () => {
 
               <Col xs={6} sm={4} md={2}>
                 <a
-                  href="https://github.com/paula"
+                  href="https://github.com/paulanatali"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -128,7 +141,7 @@ const Home = () => {
 
               <Col xs={6} sm={4} md={2}>
                 <a
-                  href="https://github.com/lais"
+                  href="https://github.com/MariaLays11"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -143,7 +156,7 @@ const Home = () => {
 
               <Col xs={6} sm={4} md={2}>
                 <a
-                  href="https://github.com/fernanda"
+                  href="https://github.com/mfernandasf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -158,7 +171,7 @@ const Home = () => {
 
               <Col xs={6} sm={4} md={2}>
                 <a
-                  href="https://github.com/kaique"
+                  href="https://github.com/Kaiquesf11"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -175,7 +188,7 @@ const Home = () => {
             <div className="text-center mt-4">
               <button
                 className="botao-suricate"
-                onClick={() => navigate("/Contato")}
+                onClick={() => navigate("/Contato")} //cria navegação de rota ao clicar no botao
               >
                 Entre em Contato
               </button>
