@@ -22,7 +22,8 @@ function CardCardapio() {
       <Card className="custom-card-cardapio card-marrom">
         <Card.Body>
           <div className="overlay-text"> E MUITO MAIS...</div>
-          <button className="botao-suricate">Ver Cardápio</button>
+          
+         <div className="overlay-button"> <button className="botao-suricate">Ver Cardápio</button></div>
         </Card.Body>
       </Card>
     </div>

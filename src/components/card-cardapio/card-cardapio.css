@@ -52,8 +52,6 @@
   justify-content: center;
   align-items: center;
 }
-
-.card-marrom h3 {
-  text-align: center;
-  font-size: 1.8rem;
+.overlay-button {
+  margin-top: 10px; /* ou 1rem, ou qualquer valor que quiser */
 }
