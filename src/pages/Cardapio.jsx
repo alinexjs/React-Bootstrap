@@ -114,15 +114,15 @@ function Cardapio() {
           <Row className="g-3 mt-4">
             <h1 style={{ fontFamily: "'Poppins', sans-serif", color: "#f98702" }}>Pães</h1>
             <CardsLinha
-              titulo="Pão de Queijo"
-              texto="Crocante por fora, macio e elástico por dentro, feito com polvilho e queijo de verdade, irresistível a qualquer hora do dia."
-              imagem="/src/assets/pao de queijo.png"
+              titulo="Pão Integral"
+              texto="Rico em fibras e feito com grãos selecionados (linhaça, chia e gergelim), é saboroso, leve e uma opção nutritiva."
+              imagem="/src/assets/pao-integral.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
-              titulo="Pão Integral"
-              texto="Rico em fibras e feito com grãos selecionados (linhaça, chia e gergelim), é saboroso, leve e uma opção nutritiva."
-              imagem="/src/assets/pao integral.png"
+              titulo="Pão de Queijo"
+              texto="Crocante por fora, macio e elástico por dentro, feito com polvilho e queijo de verdade, irresistível a qualquer hora do dia."
+              imagem="/src/assets/pao-queijo.png"
               icon="/src/assets/carrinho-icon.png"
             />
             <CardsLinha
