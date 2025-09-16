@@ -65,8 +65,22 @@
   transition: 0.3s;
 }
 
-.footer .btn:hover {
-  background-color: #25D366; /* verde WhatsApp */
-  border-color: #25D366;
-  color: #fff;
+/* Responsividade para telas pequenas */
+@media (max-width: 576px) {
+  .footer .cup-image img {
+    width: 45px; /* imagem menor em mobile */
+  }
+
+  .footer a {
+    font-size: 1.1rem; /* ícones menores */
+  }
+
+  .footer p {
+    font-size: 0.8rem; /* texto menor */
+  }
+
+  .footer .d-flex {
+    flex-direction: column; /* empilha ícones em mobile se quiser */
+    gap: 0.5rem; /* espaçamento menor */
+  }
 }

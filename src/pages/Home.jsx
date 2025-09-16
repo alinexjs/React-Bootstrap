@@ -4,40 +4,50 @@ import CarouselComponent from "../components/carrousel/carrousel";
 import Animate from "../components/scroll-animate/scroll";
 import CardsRow from "../components/card/card";
 import xicara from "../assets/xirc.png";
-import Button from "react-bootstrap/Button";
+import logo from "../assets/logo-atual.png";
+import brown from "../assets/logo-marrom.png";
 import "../App.css";
-import { useNavigate } from "react-router-dom"; // função de navegação
+import { useNavigate } from "react-router-dom";
+
+import CardCardapio from "../components/card-cardapio/card-cardapio";
+
+// imagens dos devs
+import Aline from "../assets/Aliine.jpg";
+import Fernanda from "../assets/Fernanda.jpg";
+import Lais from "../assets/Lais.jpg";
+import Kaique from "../assets/Kaique.jpg";
+import Paula from "../assets/Paula.jpg";
 
 const Home = () => {
-  const navigate = useNavigate(); // usado para redirecionar páginas (desativado enquanto rotas estão comentadas)
+  const navigate = useNavigate();
 
   return (
     <div>
       <CarouselComponent />
 
       <section className="corpo1">
-        <Container>
-          <Row className="align-items-center" style={{ columnGap: "200px" }}>
-            <Col md={4}>
-              <img src={xicara} alt="Xícara Suricate" className="img-fluid" />
+        <Container >
+          
+          <Row className="align-items-center corpo1-row">
+            <Col xs={12} md={4} className="text-center text-md-start">
+              <img
+                src={xicara}
+                alt="Xícara Suricate"
+                className="img-fluid xicara-img"
+              />
             </Col>
-
-            <Col md={6}>
-              <h2
-                style={{
-                  fontFamily: "'Poppins', sans-serif",
-                  color: "#f98702",
-                  fontWeight: "500",
-                }}
-              >
+            
+            <Col xs={12} md={8}>
+              <h2 className="home-title">
+                <img
+                  src={logo}
+                  alt="Logo-Suricate"
+                  className="home-title-logo"
+                />
                 Conheça a Suricate
               </h2>
-              <p
-                style={{
-                  fontFamily: "'Poppins', sans-serif",
-                  color: "#333",
-                }}
-              >
+
+              <p className="home-text">
                 Sabor e cuidado em cada detalhe. Na Suricate, cada café é feito
                 com carinho e atenção! Nossos pães, doces e bebidas são
                 preparados diariamente, sempre fresquinhos, para você sentir o
@@ -45,18 +55,125 @@ const Home = () => {
                 história de dedicação, qualidade e paixão pelo que fazemos.
                 Venha viver essa experiência!
               </p>
+
               <button
-                className="botao-suricate" onClick={() => navigate("/conheca")} // desativado porque rota está comentada
+                className="botao-suricate"
+                onClick={() => navigate("/conheca")}
               >
                 Saiba Mais
               </button>
             </Col>
           </Row>
+        
         </Container>
       </section>
 
+      {/* Animações e cards */}
       <Animate />
+      <CardCardapio/>
       <CardsRow />
+
+      {/* Seção Desenvolvedores */}
+      <section className="team-section my-5">
+        <Container>
+          <div className="team-container">
+            <h2 className="team-title">
+              <img
+                src={brown}
+                alt="Logo-Suricate"
+                className="team-title-logo"
+              />
+              Desenvolvedores
+            </h2>
+
+            <Row className="text-center justify-content-center g-4">
+              <Col xs={6} sm={4} md={2}>
+                <a
+                  href="https://github.com/alinejsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Aline}
+                    alt="Aline Garcia"
+                    className="rounded-circle img-fluid card-hover"
+                  />
+                </a>
+                <h6 className="team-name">Aline Garcia</h6>
+              </Col>
+
+              <Col xs={6} sm={4} md={2}>
+                <a
+                  href="https://github.com/paula"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Paula}
+                    alt="Paula Natali"
+                    className="rounded-circle img-fluid card-hover"
+                  />
+                </a>
+                <h6 className="team-name">Paula Natali</h6>
+              </Col>
+
+              <Col xs={6} sm={4} md={2}>
+                <a
+                  href="https://github.com/lais"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Lais}
+                    alt="Maria Lais"
+                    className="rounded-circle img-fluid card-hover"
+                  />
+                </a>
+                <h6 className="team-name">Maria Lais</h6>
+              </Col>
+
+              <Col xs={6} sm={4} md={2}>
+                <a
+                  href="https://github.com/fernanda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Fernanda}
+                    alt="Maria Fernanda"
+                    className="rounded-circle img-fluid card-hover"
+                  />
+                </a>
+                <h6 className="team-name">Maria Fernanda</h6>
+              </Col>
+
+              <Col xs={6} sm={4} md={2}>
+                <a
+                  href="https://github.com/kaique"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Kaique}
+                    alt="Kaique"
+                    className="rounded-circle img-fluid card-hover"
+                  />
+                </a>
+                <h6 className="team-name">Kaique</h6>
+              </Col>
+            </Row>
+
+            <div className="text-center mt-4">
+              <button
+                className="botao-suricate"
+                onClick={() => navigate("/Contato")}
+              >
+                Entre em Contato
+              </button>
+            </div>
+          </div>
+        </Container>
+      </section>
     </div>
   );
 };

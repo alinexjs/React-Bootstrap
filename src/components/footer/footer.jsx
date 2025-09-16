@@ -30,14 +30,7 @@ const Footer = () => {
           </Col>
         </Row>
 
-        {/* Botão WhatsApp */}
-        <Row className="mt-3">
-          <Col className="text-center">
-            <a href="#" className="btn btn-outline-light rounded-pill px-4">
-              <i className="bi bi-whatsapp"></i> WHATSAPP
-            </a>
-          </Col>
-        </Row>
+       
       </Container>
     </footer>
   );

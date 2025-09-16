@@ -39,9 +39,9 @@ const NavbarComponent = () => {
             {/* Links */}
             <Nav className="nav-links" navbarScroll>
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/conheca">Conheça</Nav.Link>
+              <Nav.Link as={Link} to="/Conheca">Conheça</Nav.Link>
               <Nav.Link as={Link} to="/cardapio">Cardápio</Nav.Link>
-              <Nav.Link as={Link} to="/contato">Contato</Nav.Link>
+              <Nav.Link as={Link} to="/Contato">Contato</Nav.Link>
             </Nav>
           </div>
         </Navbar.Collapse>

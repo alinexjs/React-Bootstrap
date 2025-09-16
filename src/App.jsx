@@ -24,9 +24,9 @@ function App() {
         {/* Rota do Cardápio */}
         <Route path="/cardapio" element={<Cardapio />} />
         {/* Rota do Conheça */}
-        <Route path="/conheca" element={<Conheca />} />
+        <Route path="/Conheca" element={<Conheca />} />
         {/* Rota do Contato */}
-        <Route path="/contato" element={<Contato />} />
+        <Route path="/Contato" element={<Contato />} />
       </Routes>
       <Footer />
     </Router>

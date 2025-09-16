@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
 
-/* Aplica a fonte a todos os links da navbar */
-.navbar .nav-link, .navbar .navbar-brand {
+/* Navbar */
+.navbar .nav-link, 
+.navbar .navbar-brand {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500; /* opcional: 300, 400, 500, 700 */
+  font-weight: 500;
 }
 
-
+/* Botão Suricate */
 .botao-suricate {
   background-color: rgba(92, 46, 34, 1);
   border: none;
@@ -15,10 +16,167 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   padding: 10px 25px;
-  transition: all 0.3s ease; /* animação suave */
+  transition: all 0.3s ease;
 }
 
 .botao-suricate:hover {
-  background-color: rgba(92, 46, 34, 0.8); /* cor quando passa o mouse */
-  transform: scale(1.05); /* aumenta levemente */
+  background-color: rgba(92, 46, 34, 0.8);
+  transform: scale(1.05);
+}
+
+/* Cards Hover */
+.card-hover {
+  border: 2px solid transparent;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.card-hover:hover {
+  border-color: rgba(92, 46, 34, 0.8);
+  box-shadow: 0 0 20px rgba(92, 46, 34, 0.8);
+  transform: scale(1.05);
+}
+
+
+/* Seção Home */
+.corpo1{
+  display: flex;       
+  gap: 3rem;            
+  align-items: center;  
+}
+
+.home-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #f98702;
+  font-weight: 500;
+}
+
+.home-title-logo {
+  height: 40px;
+  width: auto;
+  max-height: 40px;
+}
+
+
+.home-text {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+/* Xícara */
+.xicara-img {
+  max-width: 200px;
+  height: auto;
+  flex-shrink: 0; 
+}
+
+/* Seção Desenvolvedores */
+.team-container {
+  background-color: #f98702;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.team-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #440311;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.team-title-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.team-name {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.team-section .card-hover {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-section .card-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/* Tablets */
+@media (max-width: 992px) {
+  .corpo1-row {
+    column-gap: 2rem;
+  }
+
+  .home-title-logo {
+    height: 30px;
+    max-height: 30px;
+  }
+
+  .xicara-img {
+    max-width: 150px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .home-title {
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .home-title-logo {
+    height: 25px;
+    max-height: 25px;
+  }
+
+  .corpo1-row {
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+  }
+
+  .xicara-img {
+    width: 100px;
+  }
+
+  .home-text {
+    font-size: 0.9rem;
+  }
+
+  .botao-suricate {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .team-section .card-hover {
+    width: 80px;
+    height: 80px;
+  }
+
+  .team-title {
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .team-title-logo {
+    margin: 0;
+  }
 }
