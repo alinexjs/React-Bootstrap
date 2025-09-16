@@ -11,11 +11,12 @@ const NavbarComponent = () => {
 
   // Detecta scroll da página
   useEffect(() => {
+     // Função que será chamada sempre que o usuário rolar a página
     const handleScroll = () => {
-      setScroll(window.scrollY > 50);
+      setScroll(window.scrollY > 50); {/* Verifica se a rolagem vertical da janela*/}
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll); {/*// Sempre que o usuário rolar a página, handleScroll será executada*/}
+    return () => window.removeEventListener("scroll", handleScroll); 
   }, []);
 
   return (

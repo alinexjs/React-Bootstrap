@@ -12,7 +12,7 @@ const Animate = () => {
         src={animateImg} //imagem
         alt="animate"
         className="animate-img h-full object-contain"
-        style={{ x }}
+        style={{ x }} // animação vindo do Framer Motion
       />
     </div>
   );
